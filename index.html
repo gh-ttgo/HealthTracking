@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vitaltresor – Datenschutzerklärung / Privacy Policy</title>
+<style>
+  :root { --bg:#f5f7fa; --card:#fff; --text:#15202b; --muted:#5b6878; --accent:#0e8a80; --line:#dde3ea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0d1b2c; --card:#13263b; --text:#e3e9f0; --muted:#a7b4c3; --accent:#2ec4b6; --line:#253a52; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  header { margin-bottom:24px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:28px 0 8px; color:var(--accent); }
+  section.lang { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:8px 20px 20px; margin-bottom:24px; }
+  nav a, a { color:var(--accent); }
+  nav { display:flex; gap:16px; margin-top:8px; }
+  .muted { color:var(--muted); font-size:.9rem; }
+  .todo { background:#fff3cd; color:#5c4400; padding:0 4px; border-radius:4px; }
+  ul { padding-left:1.2em; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Vitaltresor</h1>
+  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+</header>
+
+<!-- ============================ DEUTSCH ============================ -->
+<section class="lang" id="de" lang="de">
+<h1>Datenschutzerklärung</h1>
+<p class="muted">Stand: 6. Oktober 2026</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+  Thomas Langer<br>
+  E-Mail: <span class="todo">[E-Mail-Adresse]</span>
+</p>
+
+<h2>2. Kurzfassung</h2>
+<ul>
+  <li>Alle Eingaben bleiben auf deinem Gerät. Der Entwickler erhält keine deiner Daten.</li>
+  <li>Die App hat keine Server, keine Benutzerkonten, keine Werbung, keine Analyse- oder Tracking-Dienste.</li>
+  <li>Die App fordert keine Berechtigungen an (kein Internet-, Standort-, Kamera- oder Kontaktzugriff).</li>
+  <li>Gesundheitsdaten werden verschlüsselt gespeichert.</li>
+</ul>
+
+<h2>3. Welche Daten die App verarbeitet</h2>
+<p>Die App speichert ausschließlich Daten, die du selbst eingibst:</p>
+<ul>
+  <li>Blutdruck, Puls, Körpertemperatur (inkl. Messart), Sauerstoffsättigung (SpO₂), Blutzucker, Gewicht, Größe, Kopfschmerzstärke</li>
+  <li>Beginn und Ende der Periode sowie daraus berechnete Schätzungen (nächste Periode, fruchtbare Tage)</li>
+  <li>Medikamente mit Dosis</li>
+  <li>Freie Kommentare</li>
+  <li>Datum und Uhrzeit der Einträge</li>
+</ul>
+<p>Diese Angaben sind Gesundheitsdaten im Sinne von Art. 9 DSGVO. Sie werden ausschließlich lokal auf deinem Gerät verarbeitet,
+   um sie dir anzuzeigen (Liste, Kalender, Diagramme) und auf deinen Wunsch zu exportieren.</p>
+<p>Zusätzlich speichert die App lokal das optional angegebene Geschlecht (Frau / Mann / keine Angabe; dient nur dazu,
+   die Zyklusfunktionen ein- oder auszublenden), die gewählte Sprache und – falls du sie importierst – eine Liste von Medikamentennamen
+   (siehe Punkt 7). Diese Liste enthält keine personenbezogenen Daten.</p>
+
+<h2>4. Speicherung und Verschlüsselung</h2>
+<p>Die Gesundheitsdaten werden in einer mit AES-256 verschlüsselten Datenbank (SQLCipher) gespeichert. Der Schlüssel wird
+   durch den Android-Keystore deines Geräts geschützt. Die Daten bleiben gespeichert, bis du sie in der App löschst oder die App
+   deinstallierst.</p>
+
+<h2>5. Sicherung (Backup) und Gerätewechsel</h2>
+<p><strong>Android-Sicherung:</strong> Die App nutzt die automatische Sicherung von Android. Ist die Sicherung auf deinem Gerät
+   aktiviert, sichert Android die verschlüsselte Datenbank in deinem Google-Konto, damit du deine Daten auf ein neues Gerät
+   übertragen kannst. Diese Sicherung wird von Google im Rahmen deines Google-Kontos durchgeführt; der Entwickler hat darauf keinen
+   Zugriff. Der Datenbankschlüssel wird nur dann mitgesichert, wenn die Sicherung Ende-zu-Ende-verschlüsselt ist (Android 9 oder
+   neuer mit eingerichteter Displaysperre) oder bei einer direkten Übertragung von Gerät zu Gerät. Es gelten die
+   <a href="https://policies.google.com/privacy">Datenschutzbestimmungen von Google</a>. Du kannst die Sicherung in den
+   Android-Einstellungen deaktivieren.</p>
+<p><strong>Sicherungsdatei:</strong> Auf deinen Wunsch erstellt die App eine mit einem von dir gewählten Passwort verschlüsselte
+   Sicherungsdatei (AES-256). Speicherort und Weitergabe bestimmst du selbst.</p>
+
+<h2>6. Export</h2>
+<p>Exporte als CSV, JSON oder Excel erfolgen nur auf deine Veranlassung an einen von dir gewählten Speicherort. Exportdateien sind
+   <strong>nicht</strong> verschlüsselt. Für den Umgang mit diesen Dateien (z. B. Weitergabe an Ärztinnen und Ärzte) bist du selbst
+   verantwortlich.</p>
+
+<h2>7. Medikamentenliste und externe Links</h2>
+<p>Für die Autovervollständigung kannst du eine öffentliche Medikamentenliste der Europäischen Arzneimittel-Agentur (EMA) importieren.
+   Die Datei lädst du selbst herunter; die App überträgt dabei keine Daten. Der Link „EMA-Downloadseite öffnen“ öffnet deinen
+   Browser; für diese Website gelten die Datenschutzbestimmungen der EMA.</p>
+
+<h2>8. Weitergabe an Dritte</h2>
+<p>Der Entwickler gibt keine Daten weiter, da er keine Daten erhält. Eine Übermittlung findet nur statt, wenn du selbst Dateien
+   exportierst oder die Android-Sicherung (Google) nutzt.</p>
+
+<h2>9. Rechtsgrundlage</h2>
+<p>Die Verarbeitung erfolgt ausschließlich auf deinem Gerät und auf deine eigene Veranlassung. Soweit dabei eine Verarbeitung im
+   Sinne der DSGVO vorliegt, erfolgt sie auf Grundlage deiner ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2
+   lit. a DSGVO), die du durch die Eingabe der Daten erteilst und jederzeit durch Löschen der Einträge oder Deinstallation der App
+   widerrufen kannst.</p>
+
+<h2>10. Deine Rechte</h2>
+<p>Du hast die volle Kontrolle über deine Daten: Du kannst Einträge jederzeit ansehen, exportieren und löschen. Mit der
+   Deinstallation der App werden alle lokal gespeicherten Daten gelöscht; Sicherungen in deinem Google-Konto kannst du in den
+   Einstellungen deines Google-Kontos löschen.</p>
+<p>Dir stehen die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch zu. Da der
+   Entwickler keine Daten von dir besitzt, kann er hierzu keine Daten herausgeben oder löschen. Du hast außerdem das Recht auf
+   Beschwerde bei einer Aufsichtsbehörde, in Österreich bei der
+   <a href="https://www.dsb.gv.at">Österreichischen Datenschutzbehörde</a>, Barichgasse 40–42, 1030 Wien.</p>
+
+<h2>11. Kinder</h2>
+<p>Die App richtet sich an Erwachsene (18+).</p>
+
+<h2>12. Kein Medizinprodukt</h2>
+<p>Vitaltresor ist kein Medizinprodukt und dient nicht der Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten.
+   Die Zyklusvorhersage ist eine Schätzung und nicht zur Verhütung geeignet. Wende dich für medizinischen Rat an medizinisches
+   Fachpersonal.</p>
+
+<h2>13. Änderungen</h2>
+<p>Diese Datenschutzerklärung wird bei Änderungen der App angepasst. Es gilt die jeweils auf dieser Seite veröffentlichte Fassung.</p>
+
+<h2>14. Kontakt</h2>
+<p>Fragen zum Datenschutz: <span class="todo">[E-Mail-Adresse]</span></p>
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section class="lang" id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: 6 October 2026</p>
+
+<h2>1. Controller</h2>
+<p>
+  Thomas Langer<br>
+  Email: <span class="todo">[email address]</span>
+</p>
+
+<h2>2. Summary</h2>
+<ul>
+  <li>Everything you enter stays on your device. The developer does not receive any of your data.</li>
+  <li>The app has no servers, no user accounts, no advertising and no analytics or tracking services.</li>
+  <li>The app requests no permissions (no internet, location, camera or contacts access).</li>
+  <li>Health data is stored encrypted.</li>
+</ul>
+
+<h2>3. Data processed by the app</h2>
+<p>The app only stores data you enter yourself:</p>
+<ul>
+  <li>Blood pressure, heart rate, body temperature (incl. measuring method), oxygen saturation (SpO₂), blood glucose, weight, height, headache intensity</li>
+  <li>Start and end of your period and estimates calculated from them (next period, fertile days)</li>
+  <li>Medications with dose</li>
+  <li>Free-text comments</li>
+  <li>Date and time of entries</li>
+</ul>
+<p>This is health data within the meaning of Art. 9 GDPR. It is processed only locally on your device to display it to you
+   (list, calendar, charts) and to export it at your request.</p>
+<p>The app also stores locally the optional sex setting (female / male / not specified; used only to show or hide
+   cycle features), the selected language and, if you import one, a list of medicine names (see section 7).
+   This list contains no personal data.</p>
+
+<h2>4. Storage and encryption</h2>
+<p>Health data is stored in an AES-256 encrypted database (SQLCipher). The key is protected by your device's Android Keystore.
+   Data is kept until you delete it in the app or uninstall the app.</p>
+
+<h2>5. Backup and moving to a new device</h2>
+<p><strong>Android backup:</strong> The app uses Android's automatic backup. If backup is enabled on your device, Android backs up
+   the encrypted database to your Google account so you can transfer your data to a new device. This backup is performed by Google
+   as part of your Google account; the developer has no access to it. The database key is only included if the backup is end-to-end
+   encrypted (Android 9 or later with a screen lock set) or during a direct device-to-device transfer. The
+   <a href="https://policies.google.com/privacy">Google Privacy Policy</a> applies. You can turn backup off in Android settings.</p>
+<p><strong>Backup file:</strong> At your request the app creates a backup file encrypted (AES-256) with a password you choose.
+   You decide where it is stored and with whom it is shared.</p>
+
+<h2>6. Export</h2>
+<p>Exports as CSV, JSON or Excel happen only when you start them, to a location you choose. Export files are
+   <strong>not</strong> encrypted. You are responsible for how you handle them (e.g. sharing with your doctor).</p>
+
+<h2>7. Medicine list and external links</h2>
+<p>For autocomplete you can import a public list of medicines from the European Medicines Agency (EMA). You download the file
+   yourself; the app does not transmit any data. The link “Open EMA download page” opens your browser; the EMA's privacy policy
+   applies to that website.</p>
+
+<h2>8. Sharing with third parties</h2>
+<p>The developer does not share any data because it does not receive any. Data only leaves your device when you export files
+   yourself or use Android backup (Google).</p>
+
+<h2>9. Legal basis</h2>
+<p>Processing takes place only on your device and at your own initiative. To the extent this constitutes processing under the GDPR,
+   it is based on your explicit consent (Art. 6(1)(a) and Art. 9(2)(a) GDPR), given by entering the data, which you can withdraw at
+   any time by deleting entries or uninstalling the app.</p>
+
+<h2>10. Your rights</h2>
+<p>You are in full control of your data: you can view, export and delete entries at any time. Uninstalling the app deletes all
+   locally stored data; backups in your Google account can be deleted in your Google account settings.</p>
+<p>You have the rights of access, rectification, erasure, restriction, data portability and objection. As the developer holds no
+   data about you, it cannot provide or delete any. You also have the right to lodge a complaint with a supervisory authority,
+   in Austria the <a href="https://www.dsb.gv.at">Austrian Data Protection Authority</a>, Barichgasse 40–42, 1030 Vienna.</p>
+
+<h2>11. Children</h2>
+<p>The app is intended for adults (18+).</p>
+
+<h2>12. Not a medical device</h2>
+<p>Vitaltresor is not a medical device and does not diagnose, treat, cure or prevent any disease. Cycle predictions are
+   estimates and not suitable for contraception. Consult a healthcare professional for medical advice.</p>
+
+<h2>13. Changes</h2>
+<p>This privacy policy will be updated when the app changes. The version published on this page applies.</p>
+
+<h2>14. Contact</h2>
+<p>Privacy questions: <span class="todo">[email address]</span></p>
+</section>
+</main>
+</body>
+</html>
